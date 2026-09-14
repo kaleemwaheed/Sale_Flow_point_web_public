@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SaleFlowPoint — Point of Sale Software That Gets the Money Right</title>
+<meta name="description" content="SaleFlowPoint is a multi-tenant point-of-sale platform for retail and service businesses. Every sale, refund, and stock movement posts to one exact ledger — no rounding drift, real role controls, one account for every branch.">
+<meta name="keywords" content="SaleFlowPoint, point of sale, POS software, retail POS, multi-branch POS, inventory management, till software, small business POS">
+<meta name="author" content="SaleFlowPoint">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://saleflowpoint.com/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saleflowpoint.com/">
+<meta property="og:title" content="SaleFlowPoint — Point of Sale Software That Gets the Money Right">
+<meta property="og:description" content="Every sale, refund, and stock movement writes to one ledger, in exact integer currency units — no rounding drift, ever. One account runs every branch you open.">
+<meta property="og:image" content="https://saleflowpoint.com/assets/banner.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="500">
+<meta property="og:site_name" content="SaleFlowPoint">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://saleflowpoint.com/">
+<meta name="twitter:title" content="SaleFlowPoint — Point of Sale Software That Gets the Money Right">
+<meta name="twitter:description" content="Every sale, refund, and stock movement writes to one ledger, in exact integer currency units — no rounding drift, ever.">
+<meta name="twitter:image" content="https://saleflowpoint.com/assets/banner.jpg">
+
+<!-- Icons -->
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<meta name="theme-color" content="#12233f">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SaleFlowPoint",
+  "url": "https://saleflowpoint.com/",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "Multi-tenant point-of-sale platform for retail and service businesses. Every sale, refund, and stock movement writes to one ledger in exact integer currency units.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #12203a;
+    --muted: #5b6673;
+    --accent: #0f9d63;
+    --accent-dark: #0c7f50;
+    --navy: #12233f;
+    --border: #e6e9ee;
+    --panel: #f3f5f8;
+    --receipt-bg: #12172a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 48px;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand img { height: 42px; width: 42px; object-fit: contain; }
+  .brand span { font-weight: 800; font-size: 13px; letter-spacing: 0.02em; color: var(--navy); line-height: 1.2; }
+  nav { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+  nav a.link { color: var(--muted); font-weight: 500; font-size: 15px; }
+  nav a.link:hover { color: var(--ink); }
+  .btn {
+    display: inline-block;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  .btn-primary { background: var(--navy); color: #fff; }
+  .btn-primary:hover { background: #0d1c33; }
+  .btn-outline { background: #fff; color: var(--ink); border-color: var(--border); }
+  .btn-outline:hover { border-color: var(--navy); }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 72px 48px 64px;
+  }
+  .eyebrow {
+    color: var(--accent-dark);
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-size: 52px;
+    line-height: 1.08;
+    margin: 0 0 22px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  .hero p.lede {
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.65;
+    max-width: 46ch;
+    margin: 0 0 30px;
+  }
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .cta-row .btn-primary { padding: 14px 26px; font-size: 15px; }
+  .cta-row .btn-outline { padding: 14px 26px; font-size: 15px; }
+  .fine-print { color: var(--muted); font-size: 13px; margin: 0; }
+
+  /* Receipt card */
+  .receipt-wrap { display: flex; justify-content: center; }
+  .receipt {
+    background: var(--receipt-bg);
+    color: #fff;
+    border-radius: 16px;
+    padding: 28px 30px;
+    width: 100%;
+    max-width: 420px;
+    position: relative;
+    box-shadow: 0 30px 60px -20px rgba(18, 23, 42, 0.45);
+  }
+  .receipt .dot {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 4px rgba(15, 157, 99, 0.25);
+  }
+  .receipt-line {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 9px 0;
+  }
+  .receipt-line.muted { color: rgba(255,255,255,0.55); font-weight: 500; font-size: 14px; }
+  .receipt-divider { border: none; border-top: 1px dashed rgba(255,255,255,0.25); margin: 6px 0; }
+  .receipt-total { display: flex; justify-content: space-between; align-items: baseline; padding: 14px 0 20px; font-weight: 800; font-size: 20px; }
+  .receipt-total .amt { font-size: 24px; font-variant-numeric: tabular-nums; }
+  .pay-btn {
+    width: 100%;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .pay-btn:hover { background: var(--accent-dark); }
+  .amt-num { font-variant-numeric: tabular-nums; }
+
+  /* Stats band */
+  .stats {
+    background: var(--panel);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 56px 48px;
+  }
+  .stats-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    text-align: center;
+  }
+  .stat-num { font-size: 40px; font-weight: 800; color: var(--navy); font-variant-numeric: tabular-nums; }
+  .stat-label { color: var(--muted); font-size: 14px; margin-top: 8px; line-height: 1.5; }
+
+  footer {
+    padding: 32px 48px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  @media (max-width: 900px) {
+    nav .link { display: none; }
+    .hero { grid-template-columns: 1fr; padding: 48px 24px; }
+    h1 { font-size: 38px; }
+    .stats { padding: 40px 24px; }
+    .stats-grid { grid-template-columns: 1fr; gap: 36px; }
+    header { padding: 14px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <img src="assets/logo.png" alt="SaleFlowPoint logo">
+    <span>SALE FLOW<br>POINT</span>
+  </div>
+  <nav>
+    <a class="link" href="#features">Features</a>
+    <a class="link" href="#how-it-works">How it works</a>
+    <a class="link" href="#security">Security</a>
+    <a class="link" href="#signin">Sign in</a>
+    <a class="btn btn-primary" href="#register">Register your shop</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <div class="eyebrow">Multi-tenant point of sale</div>
+    <h1>Point of sale software that gets the money right.</h1>
+    <p class="lede">
+      Every sale, refund, and stock movement writes to one ledger, in exact integer
+      currency units — no rounding drift, ever. Real role controls close the two most
+      common forms of till theft by default. One account runs every branch you open.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#register">Register your shop</a>
+      <a class="btn btn-outline" href="#signin">Sign in</a>
+    </div>
+    <p class="fine-print">No card required — every company starts in review, then goes live on approval.</p>
+  </div>
+
+  <div class="receipt-wrap">
+    <div class="receipt">
+      <span class="dot"></span>
+      <div class="receipt-line"><span>Espresso</span><span class="amt-num">Rs 350</span></div>
+      <div class="receipt-line"><span>Croissant</span><span class="amt-num">Rs 220</span></div>
+      <div class="receipt-line muted"><span>Tax (10%)</span><span class="amt-num">Rs 57</span></div>
+      <hr class="receipt-divider">
+      <div class="receipt-total"><span>Total</span><span class="amt amt-num">Rs 627</span></div>
+      <button class="pay-btn">Pay</button>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stats-grid">
+    <div>
+      <div class="stat-num">3</div>
+      <div class="stat-label">account tiers — platform, company, till</div>
+    </div>
+    <div>
+      <div class="stat-num">4</div>
+      <div class="stat-label">built-in roles, plus your own custom ones</div>
+    </div>
+    <div>
+      <div class="stat-num">100%</div>
+      <div class="stat-label">of money fields stored as integer minor units — no rounding drift</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 SaleFlowPoint. All rights reserved.
+</footer>
+
+</body>
+</html>
